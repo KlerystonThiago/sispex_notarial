@@ -7,19 +7,18 @@ export default function Navbar() {
 
     const navItems = [
         { name: "HOME", path: "/", active: true, hasDropdown: false },
-        { name: "PAGES", path: "/pages", active: false, hasDropdown: false },
-        { name: "PRACTICE AREA", path: "/practice", active: false, hasDropdown: false },
-        { name: "CASE STUDIES", path: "/cases", active: false, hasDropdown: false },
-        { name: "SHOP", path: "/shop", active: false, hasDropdown: false },
-        { name: "BLOG", path: "/blog", active: false, hasDropdown: false },
-        { name: "CONTACT US", path: "/contact", active: false, hasDropdown: false },
+        { name: "SERVIÇOS", path: "/#", active: false, hasDropdown: false },
+        { name: "INFORMAÇÕES", path: "/#", active: false, hasDropdown: false },
+        { name: "INSTITUCIONAL", path: "/#", active: false, hasDropdown: false },
+        { name: "LEGISLAÇÃO", path: "/#", active: false, hasDropdown: false },
+        { name: "CONTATO", path: "/#", active: false, hasDropdown: false },
     ];
 
     return (        
         <nav className="bg-[#231824] w-full px-6 py-6 flex justify-center font-sans relative z-50">        
             <div className="container flex items-center justify-between">
-                <Link to="/" className="flex items-center gap-2 cursor-pointer">                    
-                    <span className="text-white text-2xl font-bold tracking-wide">SISPEX</span>
+                <Link to="/" className="flex items-center gap-2 cursor-pointer">
+                     <img src="../../../public/images/brand.svg" className="w-30" alt="" />
                 </Link>
             
                 <ul className="hidden lg:flex items-center gap-8 text-[13px] font-semibold tracking-wider text-white">
